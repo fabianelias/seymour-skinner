@@ -1,0 +1,11 @@
+{
+  "nav": {
+    "price": "Pricing",
+    "about": "About",
+    "service": "Service",
+    "home": "Home"
+  },
+  "prices_section": {
+    "title": "Our prices"
+  }
+}

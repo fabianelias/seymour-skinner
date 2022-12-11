@@ -1,0 +1,29 @@
+{
+  "title_1": "La mejor manera de aprender o practicar un idioma",
+  "subtitle": "Juegos, tecnología, salud, moda, etc. Conversa con gente que tenga tu mismo interés",
+  "action-btn-contact": "Quiero participar",
+  "how_section": {
+    "title": "¿Cómo lo hacemos?",
+    "description_section": "Cuando el tema de conversación te gusta, hablas con mayor facilidad, por eso juntamos personas que esten interesadas por el mismo tema de conversación... pasa un buen rato",
+    "section_1": {
+      "title": "Creamos grupos aleatorios",
+      "description": "Para cada sesión creamos grupos aleatorios, de esa manera practicas tu idioma con diferentes personas, asi te sueltas un poco y conoces nuevos amigos."
+    },
+    "section_2": {
+      "title": "Sesiones Cortas",
+      "description": "Solo 30 min al día es sufuciente para practicar, además sabemos que tienes más cosas que hacer."
+    },
+    "section_3": {
+      "title": "Relajo y diversión",
+      "description": "Lo genial es que hablarás de lo que más te gusta, ya sean videojuegos o religión."
+    },
+    "section_4": {
+      "title": "Una forma más de aprender",
+      "description": "Creemos que es importante que esto sea una herramienta más para aprender un idioma por ende no reemplaza unas buenas clases con profesores especializados."
+    } 
+  },
+  "us_section" : {
+    "title": "Un poco de nosotros",
+    "description": "Somos un grupo de jovenes con muchas ganas de conocer el mundo, personas y culturas pero para tener una mejor experiencía, hablar un idioma global es necesario, Sabemos que es super importante tener clases de una lengua extrajera, aprender grámatica y más, pero gana más practica y conversa de tus gustos con personas random pero con tus mismos itereses y nivel."
+  }
+}
