@@ -6,7 +6,6 @@ import { useTranslation } from 'next-i18next';
 export default function Container(props: any) {
 
   const { children, ...customMeta } = props;
-  console.log("🚀 ~ file: Container.tsx:9 ~ Container ~ customMeta", customMeta)
   
   const router = useRouter();
 

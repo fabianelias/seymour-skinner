@@ -1,6 +1,5 @@
 import React from "react";
 import Container from "../../components/Container";
-import PriceSection from './PricesSection';
 import HowSection from './howSection';
 import HeaderSection from './HeaderSection';
 import UsPage from '../us/index';
@@ -16,8 +15,6 @@ const LandingPage = (props) => {
           <HowSection locale={props.locale}/>
 
           <UsPage locale={props.locale} />
-
-          {/*<PriceSection locale={props.locale} />*/}
 
         </div>
     </Container>
