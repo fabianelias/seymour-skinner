@@ -38,8 +38,7 @@ export default function Container(props: any) {
         <link rel="manifest" href="/site.webmanifest"></link>
       </Head>
       <Nav locale={'es'} />
-      <main id="skip" className="flex-wrap">
-        <div className="bg-white  bg-h dark:bg-gray-900"></div>
+      <main id="skip" className="flex-wrap p-5">
         {children}
         <br />
         <footer className="container p-4  bg-white rounded-lg shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800">
