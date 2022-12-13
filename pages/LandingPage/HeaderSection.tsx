@@ -13,14 +13,14 @@ const HeaderSection = (props: IHeaderSection) => {
 
   return (
     <section className="mt-5 md:mt-[100px]" id="header-section">
-      <h1 className="mb-4 text-6xl font-bold  text-gray-900  dark:text-white">
+      <h1 className="mb-4 text-7xl font-bold  text-gray-900  dark:text-white">
         {t("title_1")}
       </h1>
-      <p className="mb-6 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400 md:mt-[30px]">
+      <p className="mb-6 text-2xl font-normal text-gray-500 sm:px-16 xl:px-48 dark:text-gray-400 md:mt-[30px]">
         {t("subtitle")}
       </p>
       <Link href={`${locale}/contact`} className="">
-        <button type="button" className="md:mt-[20px] text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-lg px-5 py-2.5 mr-5 mb-5 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">
+        <button type="button" className="md:mt-[20px] text-white bg-yellow-500  hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-2xl px-5 py-2.5 mr-5 mb-5 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">
           {t("action-btn-contact")}
         </button>
       </Link>

@@ -40,7 +40,7 @@ const Nav = (props: INav) => {
     <nav className="border-gray-200 px-2 sm:px-4 py-3.5 rounded dark:bg-gray-900">
       <div className="container max-w-6xl flex flex-wrap items-center justify-between mx-auto">
         <a href="/" className="flex items-center">
-          <span className="self-center text-xl font-bold whitespace-nowrap dark:text-white">Learn friendly</span>
+          <span className="self-center text-2xl font-bold whitespace-nowrap dark:text-white">Be Fluently</span>
         </a>
         <button data-collapse-toggle="navbar-default" type="button" className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
           <span className="sr-only">Open main menu</span>

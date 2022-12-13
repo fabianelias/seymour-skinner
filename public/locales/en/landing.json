@@ -1,7 +1,29 @@
 {
   "title_1": "The best way to learn or practice a lenguage",
   "subtitle": "Games, Technology, Works, Interviews talk and practice with the topic that you feel comfortable with.",
-  "title_2": "How do we do it?",
-  "subtitle_2": "When you like the topic of conversation, you talk more easily, so we gather people who are interested in the same topic and accompanied by a moderator who has the necessary tools to help and guide the conversation if the participants want it.",
-  "action-btn-contact": "I want to participate"
+  "action-btn-contact": "I want to participate",
+  "how_section": {
+    "title": "How do we do it?",
+    "description_section": "When you like the topic of conversation, you speak more easily, that's why we gather people who are interested in the same topic of conversation... have a good time",
+    "section_1": {
+      "title": "We create random groups",
+      "description": "For each session we create random groups, that way you practice your language with different people, that way you loosen up a bit and meet new friends."
+    },
+    "section_2": {
+      "title": "Short Sessions",
+      "description": "Just 30 min a day is enough to practice, plus we know you have more to do."
+    },
+    "section_3": {
+      "title": "Relaxation and fun",
+      "description": "The great thing is that you will talk about what you like the most, be it video games or religion."
+    },
+    "section_4": {
+      "title": "One more way to learn",
+      "description": "We believe that it is important that this is one more tool to learn a language, therefore it does not replace good classes with specialized teachers."
+    } 
+  },
+  "us_section" : {
+    "title": "A bit of us",
+    "description": "We are a group of young people eager to get to know the world, people and cultures, but to have a better experience, speaking a global language is necessary. We know that it is super important to have foreign language classes, learn grammar and more, but earn more practice and talk about your tastes with random people but with your same interests and level."
+  }
 }
