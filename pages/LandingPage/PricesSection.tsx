@@ -20,7 +20,7 @@ const PriceSection = (props: IPricesSection) => {
       <br />
       <div className="mt-11 flex flex-col space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
         {planes.map((plan) => {
-          return (<PricePlan priceDetail={plan} />)
+          return (<PricePlan key={plan.namePlan} priceDetail={plan} />)
         })}
       </div>
       <br />
