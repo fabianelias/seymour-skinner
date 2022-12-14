@@ -37,18 +37,25 @@ export default function Container(props: any) {
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
       </Head>
-
-      <Script id="google-analytics">
-        {`
-          <script async src="https://www.googletagmanager.com/gtag/js?id=G-5BG8WT6B5V"></script>
-          <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-5BG8WT6B5V');
-          </script>
-        `}
-      </Script>
+      
+      <Script
+        strategy="afterInteractive"
+        src={`https://www.googletagmanager.com/gtag/js?id=G-5BG8WT6B5V`}
+      />
+      <Script
+        id="ga-tracking"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-5BG8WT6B5V', {
+            page_path: window.location.pathname,
+        });
+        `,
+        }}
+      />
 
       <Nav locale={'es'} />
       <main id="skip" className="flex-wrap p-5">
