@@ -36,8 +36,10 @@ export default function Container(props: any) {
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-        <Script id="google-analytics">
-          {`
+      </Head>
+
+      <Script id="google-analytics">
+        {`
           <script async src="https://www.googletagmanager.com/gtag/js?id=G-5BG8WT6B5V"></script>
           <script>
             window.dataLayer = window.dataLayer || [];
@@ -46,8 +48,8 @@ export default function Container(props: any) {
             gtag('config', 'G-5BG8WT6B5V');
           </script>
         `}
-        </Script>
-      </Head>
+      </Script>
+
       <Nav locale={'es'} />
       <main id="skip" className="flex-wrap p-5">
         {children}
