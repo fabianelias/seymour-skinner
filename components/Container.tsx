@@ -13,7 +13,7 @@ export default function Container(props: any) {
 
   const metaData = {
     title: '',
-    description: '',
+    description: t(""),
     image: '',
     type: 'website',
     ...customMeta
@@ -25,8 +25,8 @@ export default function Container(props: any) {
         <title>{`${metaData.title} ${t("head.title")}`}</title>
         <meta name='robots' content='follow, index' />
         <meta content={metaData.description} name='description' />
-        <meta property='og:url' content={`https://fabianelias.github.io${router.asPath}`} />
-        <link rel='canonical' href={`https://fabianelias.github.io${router.asPath}`} />
+        <meta property='og:url' content={`https://www.talkfluency.com`} />
+        <link rel='canonical' href={`https://www.talkfluency.com`} />
         <meta property='og.type' content={metaData.type} />
         <meta property='og:site_name' content='Fabian Bravo Gajardo' />
         <meta property='og:description' content={metaData.description} />
