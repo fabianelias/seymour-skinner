@@ -15,7 +15,7 @@ const UsPage = (props: IUsPage) => {
   const { t } = useTranslation('landing');
 
   return (
-    <Row>
+    <Row id={'us-section'}>
       <Col md={24} className={'items-center content-center text-center'}>
         <Image
           alt="Online illustrations by Storyset"
