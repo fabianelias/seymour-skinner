@@ -1,4 +1,17 @@
 {
+  "nav": {
+    "price": "Pricing",
+    "about": "About",
+    "service": "Service",
+    "home": "Home"
+  },
+  "prices_section": {
+    "title": "Our prices"
+  },
+  "head": {
+    "title": "Learn and Practice a language in an environment of total relaxation",
+    "title_join": "Join and"
+  },
   "title_1": "The best way to learn or practice a lenguage",
   "subtitle": "Games, Technology, Works, Interviews talk and practice with the topic that you feel comfortable with.",
   "action-btn-contact": "I want to participate",
@@ -25,5 +38,8 @@
   "us_section" : {
     "title": "A bit of us",
     "description": "We are a group of young people eager to get to know the world, people and cultures, but to have a better experience, speaking a global language is necessary. We know that it is super important to have foreign language classes, learn grammar and more, but earn more practice and talk about your tastes with random people but with your same interests and level."
+  },
+  "call_actions": {
+    "cta_yellow": "A social method that does work"
   }
 }

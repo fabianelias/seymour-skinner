@@ -36,10 +36,12 @@ const Nav = (props: INav) => {
   const { t } = useTranslation(['common', 'landing'])
 
   return (
-    <nav className="border-gray-200 px-2 sm:px-4 py-3.5 rounded dark:bg-gray-900">
-      <div className="container max-w-6xl flex flex-wrap items-center justify-between mx-auto p-5">
+    <nav className="border-gray-200 px-2 sm:px-4 py-4 rounded dark:bg-gray-900">
+      <div className="container flex flex-wrap justify-between items-center content-center">
         <a href="/" className="flex items-center">
-          <span className="self-center text-2xl font-bold whitespace-nowrap dark:text-white">Talk Fluency</span>
+          <span className="self-center text-2xl font-bold whitespace-nowrap dark:text-white">
+            Talk Fluency
+          </span>
         </a>
         <div className="hidden w-full md:block md:w-auto" id="navbar-default">
           <ul className="flex flex-col p-4 mt-4 border  border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">

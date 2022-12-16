@@ -1,4 +1,17 @@
 {
+  "nav": {
+    "price": "Precios",
+    "about": "Nosotros",
+    "service": "Cómo lo hacemos",
+    "home": "Home"
+  },
+  "prices_section": {
+    "title": "Nuestros precios"
+  },
+  "head": {
+    "title": "Aprende y Práctica un idioma en un ambiente de relajo total",
+    "title_join": "Únete y"
+  },
   "title_1": "La mejor manera de aprender o practicar un idioma",
   "subtitle": "Juegos, tecnología, salud, moda, etc. Conversa con gente que tenga tu mismo interés",
   "action-btn-contact": "Quiero participar",
@@ -25,5 +38,8 @@
   "us_section" : {
     "title": "Un poco de nosotros",
     "description": "Somos un grupo de jovenes con muchas ganas de conocer el mundo, personas y culturas pero para tener una mejor experiencía, hablar un idioma global es necesario, Sabemos que es super importante tener clases de una lengua extrajera, aprender grámatica y más, pero gana más practica y conversa de tus gustos con personas random pero con tus mismos itereses y nivel."
+  },
+  "call_actions": {
+    "cta_yellow": "Un método social que si funciona"
   }
 }

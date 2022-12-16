@@ -2,6 +2,7 @@ import Container from "../../components/Container"
 import React from "react"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 import { useTranslation } from 'next-i18next';
+import { Row, Col } from 'antd';
 
 const Contact = () => {
 
@@ -9,9 +10,11 @@ const Contact = () => {
   const title = t("head.title_join")
   return (
     <Container { ...{title: title}}>
-      <div>
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScQBdBTdWQgEYeNWWo2lNFqMW0ttbkTIA_WPbjZntSbFg1i3g/viewform?embedded=true" width="100%" height="1100">Cargando…</iframe>
-      </div>
+      <Row>
+        <Col span={24} className={'flex items-center content-center'}>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScI6NET4hPfp2PwcfQm3TdE7R-YN1M9ynMP4J6BDZfzZLuZTg/viewform?embedded=true" width="100%" height="1500px">Cargando…</iframe>
+        </Col>
+      </Row>
     </Container>
   )
 }
