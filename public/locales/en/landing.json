@@ -41,5 +41,13 @@
   },
   "call_actions": {
     "cta_yellow": "A social method that does work"
+  },
+  "blog": {
+    "title": "Shots",
+    "description": "Little shots to help you learn",
+    "head": {
+      "title": "Shots - FlashCards for learning",
+      "description": "A good way to learn is to dedicate at least 30 minutes a day to speak, read or listen to the language, but it is also a good idea to read small Shorts / Blogs with completely necessary information."
+    }
   }
 }

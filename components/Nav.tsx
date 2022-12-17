@@ -3,6 +3,7 @@ import { useTheme } from 'next-themes';
 import { SunIcon, MoonIcon } from "@heroicons/react/outline";
 import { useTranslation } from 'next-i18next';
 import Link from 'next/link';
+import NavItem from './NavItem';
 
 interface INav {
   locale: string;
@@ -46,12 +47,13 @@ const Nav = (props: INav) => {
         <div className="hidden w-full md:block md:w-auto" id="navbar-default">
           <ul className="flex flex-col p-4 mt-4 border  border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             <li>
-              <a href="#" className="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">{t("nav.home")}</a>
+            <NavItem href={'/'} text="Home" locale={props.locale} />
             </li>
             <li>
-              <a href="#us-section" className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
-                  {t("nav.about")}
-              </a>
+            <NavItem href={`/shots`} text="Shots" locale={props.locale} />
+            </li>
+            <li>
+              <NavItem href={'#us-section'} text={t("nav.about")} locale={props.locale} />
             </li>
             <li>
               <a href="#how-section" className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">{t("nav.service")}</a>
