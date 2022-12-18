@@ -24,7 +24,7 @@ const Shorts = (props: any) => {
 
     <Suspense fallback={false}>
       <Container {...metaData} >
-          <Row className='md:mt-[30px] px-8  bg-slate-100 dark:bg-transparent rounded-lg'>
+          <Row className='px-8  bg-slate-100 dark:bg-transparent rounded-lg'>
             <Col xs={24} md={10} lg={10} className={'md:mt-[50px] text-left content-center py-4'}>
               <h1 className="mb-4 text-3xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
                 {t("blog.title")}
@@ -46,15 +46,21 @@ const Shorts = (props: any) => {
             <Col xs={24} md={14} lg={14} className={'hidden md:block lg:block'}>
               <Image
                 alt="Online illustrations by Storyset"
-                height={700}
-                width={700}
+                height={600}
+                width={600}
                 src="/resources/team-pana.svg"
                 className="img-landing"
               />
             </Col>
           </Row>
-          <Row className="lg:mt-[100px] lg:mb-[300px]">
-            <Col xs={24} md={14} lg={14} className={'dark:bg-gray-900 p-6 rounded-xl'}>
+          <Row className="lg:mt-[30px] lg:mb-[300px]">
+            <Col span={24} className={'xs:block sm:block hidden'}>
+            <div className="p-4 mb-4 text-sm text-yellow-800 bg-yellow-100 rounded-lg dark:bg-yellow-200 dark:text-yellow-800 text-center" role="alert">
+              {`${t("call_actions.cta_yellow")} `}
+              <Link href={`${props.locale}/contact`} ><span className="font-medium">{t("action-btn-contact")}</span></Link>
+            </div>
+            </Col>
+            <Col xs={24} sm={15} md={17} lg={17} className={'dark:bg-gray-900 p-6 rounded-xl'}>
               {!shots.length ? (
                 <h1>No hay shots</h1>
               ) :
@@ -68,7 +74,7 @@ const Shorts = (props: any) => {
                 ))
               }
             </Col>
-            <Col xs={24} md={10} lg={10}>
+            <Col xs={24} md={7} lg={7} className={'md:border-l-2'}>
               <Duolingo></Duolingo>
             </Col>
           </Row>

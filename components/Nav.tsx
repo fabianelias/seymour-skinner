@@ -35,7 +35,7 @@ const Nav = (props: INav) => {
 
   return (
     <nav className="border-gray-200 px-2 sm:px-4 py-4 rounded dark:bg-gray-900">
-      <div className="container flex flex-wrap justify-between items-center content-center">
+      <div className="container flex flex-wrap justify-between items-center content-center pl-4">
         <a href="/" className="flex items-center">
           <span className="self-center text-2xl font-bold whitespace-nowrap dark:text-white">
             Talk Fluency
