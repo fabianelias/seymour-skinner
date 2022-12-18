@@ -60,6 +60,7 @@ const getPageMetaData = (post) => {
         date: getToday(post.properties.Date.last_edited_time),
         slug: post.properties.Slug.rich_text[0].plain_text,
         readingTime: post.properties.ReadingTime.rich_text[0].plain_text,
+        icon: post.icon ? post.icon.emoji : ''
     };
 };
 

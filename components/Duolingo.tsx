@@ -9,7 +9,7 @@ const Duolingo = (props) => {
         </div>
       )
         :
-        <div className="max-w-sm bg-white border border-gray-100 rounded-xl dark:bg-gray-900 dark:border-gray-900 mx-10">
+        <div className="w-full bg-white border border-gray-100 rounded-xl dark:bg-gray-900 dark:border-gray-900">
           <a href="https://invite.duolingo.com/BDHTZTB5CWWKTWC7EZYM3S56RQ" target={'_blank'}>
             <img className="rounded-t-lg" src="/resources/app-duolingo.jpg" alt="" />
           </a>

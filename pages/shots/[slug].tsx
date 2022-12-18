@@ -33,10 +33,13 @@ const ArticlePage = (props: any) => {
             <h1 className="mb-4 text-3xl font-bold tracking-tight text-black md:text-5xl dark:text-white">
               {shot.metadata.title}
             </h1>
-            <div className="flex flex-col items-start justify-between w-full mt-2 md:flex-row md:items-center">
+            <div className="flex flex-col items-start justify-between w-full mt-2 pb-3 md:flex-row md:items-center  border-b-2">
               <div className="flex items-center">
-                <p className="ml-2 text-sm text-gray-700 dark:text-gray-300">
-                  {'Talk FLuency / '}
+                <h2 className="mb-2 text-gray-900 md:text-6xl dark:text-gray-100">
+                  {shot.metadata.icon}
+                </h2>
+                <p className="mt-2 text-sm text-gray-700 dark:text-gray-300 ml-5">
+                  {'Talk Fluency | '}
                   {format(parseISO(dateShot), 'MMMM dd, yyyy')}
                 </p>
               </div>
@@ -45,12 +48,12 @@ const ArticlePage = (props: any) => {
               </p>
             </div>
             <Suspense fallback={false}>
-              <div className="w-full mt-4 prose dark:prose-dark">
+              <div className="w-full mt-4 prose dark:prose-dark text-lg">
                 <div dangerouslySetInnerHTML={{ __html: marked(shot.markdown) }} />
               </div>
+              <Duolingo type={'banner'}></Duolingo>
             </Suspense>
           </Col>
-          <Duolingo type={'banner'}></Duolingo>
         </article>
       </Row>
     </Container>

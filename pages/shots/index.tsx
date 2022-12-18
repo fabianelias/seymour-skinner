@@ -7,7 +7,6 @@ import Image from "next/image"
 import BlogPost from "../../components/BlogPosts"
 import { Suspense } from 'react';
 import { getAllPublished } from "../../services/notion-services"
-import SuspenseSkeleton from "../../components/SuspenseSkeleton"
 import React from "react"
 import Duolingo from '../../components/Duolingo';
 
@@ -60,7 +59,7 @@ const Shorts = (props: any) => {
               <Link href={`${props.locale}/contact`} ><span className="font-medium">{t("action-btn-contact")}</span></Link>
             </div>
             </Col>
-            <Col xs={24} sm={15} md={17} lg={17} className={'dark:bg-gray-900 p-6 rounded-xl'}>
+            <Col xs={24} sm={15} md={16} lg={16} className={'dark:bg-gray-900 mt-5 rounded-xl'}>
               {!shots.length ? (
                 <h1>No hay shots</h1>
               ) :
@@ -70,11 +69,12 @@ const Shorts = (props: any) => {
                     slug={shot.slug}
                     title={shot.title}
                     excerpt={shot.description}
+                    icon={shot.icon}
                   />
                 ))
               }
             </Col>
-            <Col xs={24} md={7} lg={7} className={'md:border-l-2'}>
+            <Col xs={24} md={8} lg={8} className={'md:border-l-2 mt-10 px-2'}>
               <Duolingo></Duolingo>
             </Col>
           </Row>
