@@ -22,7 +22,7 @@ const Shorts = (props: any) => {
 
   return (
 
-    <Suspense fallback={< SuspenseSkeleton />}>
+    <Suspense fallback={false}>
       <Container {...metaData} >
           <Row className='md:mt-[30px] px-8  bg-slate-100 dark:bg-transparent rounded-lg'>
             <Col xs={24} md={10} lg={10} className={'md:mt-[50px] text-left content-center py-4'}>

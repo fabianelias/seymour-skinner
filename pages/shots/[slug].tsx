@@ -45,7 +45,7 @@ const ArticlePage = (props: any) => {
                 <small><i>{shot.metadata.readingTime}</i></small>
               </p>
             </div>
-            <Suspense fallback={< SuspenseSkeleton/>}>
+            <Suspense fallback={false}>
               <div className="w-full mt-4 prose dark:prose-dark">
                 <div dangerouslySetInnerHTML={{ __html: marked(shot.markdown) }} />
               </div>
@@ -64,7 +64,7 @@ export const getStaticPaths = async () => {
 
   return {
     paths,
-    fallback: "blocking",
+    fallback: 'blocking',
   };
 };
 
