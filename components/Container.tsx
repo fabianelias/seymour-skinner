@@ -3,7 +3,7 @@ import Nav from "./Nav";
 import Head from 'next/head';
 import { useTranslation } from 'next-i18next';
 import Script from 'next/script'
-import Link from 'next/link';
+
 
 export default function Container(props: any) {
 
@@ -58,18 +58,15 @@ export default function Container(props: any) {
       />
 
       <Nav locale={'es'} />
-      <main id="skip" className="flex-wrap p-4">
-
+      <main id="skip" className="flex-wrap p-4 container">
         {children}
-
-        <footer className="container p-4 bg-white rounded-lg shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800">
-          <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 <a href="/" className="hover:underline">TalkFluency</a>. All Rights Reserved.
-          </span>
-          <ul className="flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
-          </ul>
-        </footer>
-        <br />
       </main>
+      <footer className="container p-4 bg-white rounded-lg shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800">
+        <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 <a href="/" className="hover:underline">TalkFluency</a>. All Rights Reserved.
+        </span>
+        <ul className="flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
+        </ul>
+      </footer>
     </div>
   )
 }

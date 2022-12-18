@@ -49,5 +49,11 @@
       "title": "Shots - FlashCards de aprendizaje",
       "description": "Una buena forma de aprender es dedicando al menos 30 minutos al dia para hablar, leer o escuchar el idioma, pero no esta demás leer pequeños Shorts / Blogs con información completamente necesario"
     }
+  },
+  "ads": {
+    "duolingo": {
+      "description": "En definitiva, si bien Duolingo es excelente opción para aprender nuevo vocabulario y como un juego de complemento",
+      "call_actions": "Descarga la app"
+    }
   }
 }

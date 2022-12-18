@@ -49,5 +49,11 @@
       "title": "Shots - FlashCards for learning",
       "description": "A good way to learn is to dedicate at least 30 minutes a day to speak, read or listen to the language, but it is also a good idea to read small Shorts / Blogs with completely necessary information."
     }
+  },
+  "ads": {
+    "duolingo": {
+      "description": "In short, while Duolingo is an excellent choice for learning new vocabulary and as a complementary game, it is also a great way to learn new vocabulary.",
+      "call_actions": "Download the app"
+    }
   }
 }
