@@ -1,7 +1,7 @@
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
+import { useTranslation } from "next-i18next"
 import Container from "../../components/Container"
 import { Row, Col } from "antd"
-import { useTranslation } from "next-i18next"
 import Link from "next/link"
 import Image from "next/image"
 import BlogPost from "../../components/BlogPosts"
@@ -10,14 +10,6 @@ import { getAllPublished } from "../../services/notion-services"
 import SuspenseSkeleton from "../../components/SuspenseSkeleton"
 import React from "react"
 import Duolingo from '../../components/Duolingo';
-interface IShort {
-  slug: string;
-  frontMatter: { [key: string]: string };
-}
-interface IShorts {
-  locale: string;
-  shorts: Array<IShort>;
-}
 
 const Shorts = (props: any) => {
 
@@ -90,7 +82,7 @@ export const getStaticProps = async ({ locale }) => {
     props: {
       shots: data,
       locale: locale,
-      ...(await serverSideTranslations(locale, ["landing", "common"]))
+      ...(await serverSideTranslations(locale, ["common", "landing"]))
     },
     revalidate: 60
   };
