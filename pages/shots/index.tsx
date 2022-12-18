@@ -77,7 +77,6 @@ const Shorts = (props: any) => {
 
 export const getStaticProps = async ({ locale }) => {
   const data = await getAllPublished({ type: 'shots', locale: locale })
-
   return {
     props: {
       shots: data,

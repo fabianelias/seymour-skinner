@@ -9,10 +9,10 @@ import { useRouter } from 'next/router';
 import NextLink from 'next/link';
 import cn from 'classnames';
 
-const NavItem = ({ href, text, locale }: any) => {
+const NavItem = ({ href, text}: any) => {
 
     const router = useRouter();
-    const isActive = `${locale}${router.asPath}` === href;
+    const isActive = `${router.asPath}` === href;
     return (
         <NextLink href={href}>
             <p className={cn(isActive
