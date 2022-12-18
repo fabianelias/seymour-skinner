@@ -7,7 +7,6 @@ import Link from "next/link";
 import { getSinglePost, getAllPublished } from "../../services/notion-services"
 import { marked } from 'marked';
 import { Suspense } from "react";
-import SuspenseSkeleton from "../../components/SuspenseSkeleton";
 import Duolingo from '../../components/Duolingo';
 
 
