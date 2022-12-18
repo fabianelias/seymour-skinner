@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { useTheme } from 'next-themes';
 import { SunIcon, MoonIcon } from "@heroicons/react/outline";
 import { useTranslation } from 'next-i18next';
-import Link from 'next/link';
 import NavItem from './NavItem';
 
 interface INav {
@@ -60,6 +59,20 @@ const Nav = (props: INav) => {
             </li>
             <li className="hidden">
               <a href="#price-section" className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">{t("nav.price")}</a>
+            </li>
+            <li>
+              {renderThemeChanger()}
+            </li>
+          </ul>
+        </div>
+
+        <div className="md:hidden lg:hidden content-center text-center" id="navbar-default">
+          <ul className="flex flex-row p-4 mt-1 space-x-10 md:bg-white dark:bg-gray-800 dark:border-gray-700">
+            <li>
+            <NavItem href={'/'} text="Home" locale={props.locale} />
+            </li>
+            <li>
+            <NavItem href={`/shots`} text="Shots" locale={props.locale} />
             </li>
             <li>
               {renderThemeChanger()}
