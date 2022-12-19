@@ -1,6 +1,7 @@
 import Nav from "./Nav";
 import Head from 'next/head';
 import { useTranslation } from 'next-i18next';
+import DocumentsWindow from '../pages/_documents';
 
 
 export default function Container(props: any) {
@@ -34,7 +35,7 @@ export default function Container(props: any) {
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
       </Head>
-
+      <DocumentsWindow/>
       <Nav locale={'es'} />
       <main id="skip" className="flex-wrap p-4 container">
         {children}

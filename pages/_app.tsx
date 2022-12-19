@@ -1,29 +1,24 @@
 import '../styles/global.css'
-import { useEffect } from 'react';
 import { appWithTranslation } from 'next-i18next'
-import TagManager from 'react-gtm-module'
 
 import { ThemeProvider } from 'next-themes'
 import type { AppProps } from 'next/app'
+import { GTMPageView } from '../utils/gtm';
+import { useEffect } from 'react';
+import Router from 'next/router';
 
-
-
-const HomePage =({ 
-  Component, 
-  pageProps: {session, ...pageProps},
- }: AppProps) => {
-
-  const tagManagerArgs = {
-    gtmId: process.env.NEXT_PUBLIC_GTM_ID,
-    page: {
-      path: '/home'
-    }
-  }
+const HomePage = ({
+  Component,
+  pageProps: { session, ...pageProps },
+}: AppProps) => {
 
   useEffect(() => {
-    TagManager.initialize(tagManagerArgs)
-  }, [])
-
+    const handleRouteChange = (url: string) => GTMPageView(url);
+    Router.events.on('routeChangeComplete', handleRouteChange);
+    return () => {
+      Router.events.off('routeChangeComplete', handleRouteChange);
+    };
+  }, []);
 
   return (
     <ThemeProvider attribute="class">

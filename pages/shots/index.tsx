@@ -5,11 +5,10 @@ import { Row, Col } from "antd"
 import Link from "next/link"
 import Image from "next/image"
 import BlogPost from "../../components/BlogPosts"
-import { Suspense, useEffect } from 'react';
+import { Suspense } from 'react';
 import { getAllPublished } from "../../services/notion-services"
 import React from "react"
 import Duolingo from '../../components/Duolingo';
-import TagManager from 'react-gtm-module';
 
 const Shorts = (props: any) => {
 
@@ -19,18 +18,6 @@ const Shorts = (props: any) => {
     title: t("blog.head.title"),
     descripton: t("blog.head.description")
   }
-
-  const tagManagerArgs = {
-    gtmId: process.env.NEXT_PUBLIC_GTM_ID,
-    page: {
-      path: '/Shots',
-      title: metaData.title
-    }
-  }
-
-  useEffect(() => {
-    TagManager.initialize(tagManagerArgs)
-  }, [])
 
   return (
 
