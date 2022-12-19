@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Container from "../../components/Container";
 import HowSection from './howSection';
 import HeaderSection from './HeaderSection';
 import UsPage from '../us/index';
 import { useTranslation } from "next-i18next";
 import Link from 'next/link';
+import TagManager from 'react-gtm-module';
 
 const LandingPage = (props) => {
 

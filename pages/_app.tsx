@@ -6,14 +6,24 @@ import TagManager from 'react-gtm-module'
 import { ThemeProvider } from 'next-themes'
 import type { AppProps } from 'next/app'
 
-function HomePage({ 
+
+
+const HomePage =({ 
   Component, 
   pageProps: {session, ...pageProps},
- }: AppProps) {
+ }: AppProps) => {
+
+  const tagManagerArgs = {
+    gtmId: process.env.NEXT_PUBLIC_GTM_ID,
+    page: {
+      path: '/home'
+    }
+  }
 
   useEffect(() => {
-      TagManager.initialize({ gtmId: process.env.GTM_ID });
-  }, []);
+    TagManager.initialize(tagManagerArgs)
+  }, [])
+
 
   return (
     <ThemeProvider attribute="class">

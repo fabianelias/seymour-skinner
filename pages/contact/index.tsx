@@ -1,12 +1,27 @@
 import Container from "../../components/Container"
-import React from "react"
+import React, { useEffect } from "react"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 import { useTranslation } from 'next-i18next';
+import TagManager from 'react-gtm-module';
 
 const Contact = () => {
 
   const { t } = useTranslation("common")
   const title = t("head.title_join")
+
+  const tagManagerArgs = {
+    gtmId: process.env.NEXT_PUBLIC_GTM_ID,
+    page: {
+      path: '/Register',
+      title: title
+    }
+  }
+
+  useEffect(() => {
+    TagManager.initialize(tagManagerArgs)
+  }, [])
+
+
   return (
     <Container { ...{title: title}}>
       <div>
