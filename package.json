@@ -23,7 +23,8 @@
     "notion-to-md": "^2.5.5",
     "npm": "^9.2.0",
     "reac": "^0.0.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-gtm-module": "^2.0.11"
   },
   "devDependencies": {
     "@types/node": "18.11.12",

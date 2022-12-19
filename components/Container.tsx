@@ -1,8 +1,6 @@
-import { useRouter } from "next/router";
 import Nav from "./Nav";
 import Head from 'next/head';
 import { useTranslation } from 'next-i18next';
-import Script from 'next/script'
 
 
 export default function Container(props: any) {
@@ -19,7 +17,6 @@ export default function Container(props: any) {
     type: 'website',
     ...customMeta
   }
-
   return (
     <div>
       <Head>
@@ -37,25 +34,6 @@ export default function Container(props: any) {
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
       </Head>
-
-      <Script
-        strategy="afterInteractive"
-        src={`https://www.googletagmanager.com/gtag/js?id=G-5BG8WT6B5V`}
-      />
-      <Script
-        id="ga-tracking"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-5BG8WT6B5V', {
-            page_path: window.location.pathname,
-        });
-        `,
-        }}
-      />
 
       <Nav locale={'es'} />
       <main id="skip" className="flex-wrap p-4 container">
