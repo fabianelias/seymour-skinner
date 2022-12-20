@@ -8,6 +8,7 @@ import { getSinglePost, getAllPublished } from "../../services/notion-services"
 import { marked } from 'marked';
 import { Suspense } from "react";
 import Duolingo from '../../components/Duolingo';
+import Newsletter from '../../components/Newsletter';
 
 
 const ArticlePage = (props: any) => {
@@ -51,6 +52,7 @@ const ArticlePage = (props: any) => {
               <div className="w-full mt-4 prose dark:prose-dark text-lg">
                 <div dangerouslySetInnerHTML={{ __html: marked(shot.markdown) }} />
               </div>
+              <Newsletter />
               <Duolingo type={'banner'}></Duolingo>
             </Suspense>
           </Col>

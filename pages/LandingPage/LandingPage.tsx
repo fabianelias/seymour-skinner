@@ -5,6 +5,7 @@ import HeaderSection from './HeaderSection';
 import UsPage from '../us/index';
 import { useTranslation } from "next-i18next";
 import Link from 'next/link';
+import Newsletter from '../../components/Newsletter';
 
 const LandingPage = (props) => {
 
@@ -27,6 +28,7 @@ const LandingPage = (props) => {
 
         <UsPage locale={props.locale} />
 
+        <Newsletter></Newsletter>
       </div>
     </Container>
   )

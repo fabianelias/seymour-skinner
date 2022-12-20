@@ -9,6 +9,7 @@ import { Suspense } from 'react';
 import { getAllPublished } from "../../services/notion-services"
 import React from "react"
 import Duolingo from '../../components/Duolingo';
+import Newsletter from '../../components/Newsletter';
 
 const Shorts = (props: any) => {
 
@@ -73,6 +74,8 @@ const Shorts = (props: any) => {
                   />
                 ))
               }
+
+              <Newsletter></Newsletter>
             </Col>
             <Col xs={24} md={8} lg={8} className={'md:border-l-2 mt-10 px-2'}>
               <Duolingo></Duolingo>

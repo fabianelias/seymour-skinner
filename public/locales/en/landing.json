@@ -15,6 +15,7 @@
   "title_1": "The best way to learn or practice a lenguage",
   "subtitle": "Games, Technology, Works, Interviews talk and practice with the topic that you feel comfortable with.",
   "action-btn-contact": "Subscribe",
+  "action-btn-subscribe": "Subscribe to newsletter",
   "how_section": {
     "title": "How do we do it?",
     "description_section": "When you like the topic of conversation, you speak more easily, that's why we gather people who are interested in the same topic of conversation... have a good time",
@@ -55,5 +56,11 @@
       "description": "In short, while Duolingo is an excellent choice for learning new vocabulary and as a complementary game, it is also a great way to learn new vocabulary.",
       "call_actions": "Download the app"
     }
+  },
+  "newsletter": {
+    "title": "The best way to learn or practice a lenguage",
+    "description": "Receive weekly Tips (Shots) to improve your language skills",
+    "title_btn": "Subscribe",
+    "label_input_email": "Your email address"
   }
 }

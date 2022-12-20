@@ -15,6 +15,7 @@
   "title_1": "La mejor manera de aprender o practicar un idioma",
   "subtitle": "Juegos, tecnología, salud, moda, etc. Conversa con gente que tenga tu mismo interés",
   "action-btn-contact": "Inscríbete",
+  "action-btn-subscribe": "Subscríbete al newsletter",
   "how_section": {
     "title": "¿Cómo lo hacemos?",
     "description_section": "Cuando el tema de conversación te gusta, hablas con mayor facilidad, por eso juntamos personas que esten interesadas por el mismo tema de conversación... pasa un buen rato",
@@ -55,5 +56,11 @@
       "description": "En definitiva, si bien Duolingo es excelente opción para aprender nuevo vocabulario y como un juego de complemento",
       "call_actions": "Descarga la app"
     }
+  },
+  "newsletter": {
+    "title": "La mejor manera de aprender o practicar un idioma",
+    "description": "Recibe semanalmente Tips (Shots) para mejorar con tu idioma",
+    "title_btn": "Subscríbete a nuestro Newsletter",
+    "label_input_email": "Ingresa tu email"
   }
 }
