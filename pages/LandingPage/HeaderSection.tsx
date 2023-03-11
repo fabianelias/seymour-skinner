@@ -14,8 +14,8 @@ const HeaderSection = (props: IHeaderSection) => {
   const { t } = useTranslation('landing')
 
   return (
-    <Row className='md:mt-[30px] px-8  bg-slate-100 dark:bg-transparent rounded-lg'>      
-      <Col xs={24} md={10} lg={10} className={'md:mt-[50px] text-left content-center py-4'}>
+    <Row className='px-8 dark:bg-transparent rounded-lg'>      
+      <Col xs={24} md={24} lg={24} className={'md:mt-[10px] text-center content-center py-4'}>
         <h1 className="mb-4 text-3xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
           {t("title_1")}
         </h1>
@@ -34,11 +34,11 @@ const HeaderSection = (props: IHeaderSection) => {
         </Link>
         {' '}
       </Col>
-      <Col xs={24} md={14} lg={14}>
+      <Col xs={24} md={24} lg={24}>
         <Image
           alt="Online illustrations by Storyset"
-          height={700}
-          width={700}
+          height={500}
+          width={500}
           src="/resources/team-cuate.svg"
           className="img-landing"
         />

@@ -35,14 +35,14 @@ const Nav = (props: INav) => {
 
   return (
     <nav className="border-gray-200 px-2 sm:px-4 py-4 rounded dark:bg-gray-900">
-      <div className="container flex flex-wrap justify-between items-center content-center pl-4">
+      <div className="container flex flex-wrap justify-between items-center content-center px-4 max-w-7xl">
         <a href="/" className="flex items-center">
-          <span className="self-center text-2xl font-bold whitespace-nowrap dark:text-white">
-            Talk Fluency
+          <span className="self-center text-3xl font-bold whitespace-nowrap dark:text-white">
+            Talkingchats
           </span>
         </a>
         <div className="hidden w-full md:block md:w-auto" id="navbar-default">
-          <ul className="flex flex-col p-4 mt-4 border  border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <ul className="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-md md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             <li>
             <NavItem href={'/'} text="Home" />
             </li>

@@ -24,12 +24,11 @@ const Shorts = (props: any) => {
 
     <Suspense fallback={false}>
       <Container {...metaData} >
-          <Row className='px-8  bg-slate-100 dark:bg-transparent rounded-lg'>
+          <Row className='w-full dark:bg-transparent rounded-lg'>
             <Col xs={24} md={10} lg={10} className={'md:mt-[50px] text-left content-center py-4'}>
               <h1 className="mb-4 text-3xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
                 {t("blog.title")}
               </h1>
-              <br />
               <p className="mb-6 text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">
                 {t("blog.description")}
               </p>
@@ -46,8 +45,8 @@ const Shorts = (props: any) => {
             <Col xs={24} md={14} lg={14} className={'hidden md:block lg:block'}>
               <Image
                 alt="Online illustrations by Storyset"
-                height={600}
-                width={600}
+                height={400}
+                width={400}
                 src="/resources/team-pana.svg"
                 className="img-landing"
               />
@@ -60,7 +59,7 @@ const Shorts = (props: any) => {
               <Link href={`${props.locale}/contact`} ><span className="font-medium">{t("action-btn-contact")}</span></Link>
             </div>
             </Col>
-            <Col xs={24} sm={15} md={16} lg={16} className={'dark:bg-gray-900 mt-5 rounded-xl'}>
+            <Col xs={24} sm={15} md={24} lg={24} className={'dark:bg-gray-900 mt-5 rounded-xl'}>
               {!shots.length ? (
                 <h1>No hay shots</h1>
               ) :
@@ -77,7 +76,7 @@ const Shorts = (props: any) => {
 
               <Newsletter></Newsletter>
             </Col>
-            <Col xs={24} md={8} lg={8} className={'md:border-l-2 mt-10 px-2'}>
+            <Col xs={24} md={24} lg={24} className={'hidden mt-10 px-2'}>
               <Duolingo></Duolingo>
             </Col>
           </Row>

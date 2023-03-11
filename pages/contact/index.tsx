@@ -10,7 +10,7 @@ const Contact = () => {
 
   return (
     <Container { ...{title: title}}>
-      <div>
+      <div className='w-full'>
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScQBdBTdWQgEYeNWWo2lNFqMW0ttbkTIA_WPbjZntSbFg1i3g/viewform?embedded=true" width="100%" height="1100">Cargando…</iframe>
       </div>
     </Container>

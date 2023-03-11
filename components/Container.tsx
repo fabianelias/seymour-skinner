@@ -37,7 +37,7 @@ export default function Container(props: any) {
       </Head>
       <DocumentsWindow/>
       <Nav locale={'es'} />
-      <main id="skip" className="flex-wrap p-4 container">
+      <main id="skip" className="flex flex-wrap container max-w-7xl px-4">
         {children}
       </main>
       <footer className="container p-4 bg-white rounded-lg shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800">
