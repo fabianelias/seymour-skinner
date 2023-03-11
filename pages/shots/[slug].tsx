@@ -24,17 +24,17 @@ const ArticlePage = (props: any) => {
       type="article"
     >
 
-      <Row >
+      <Row className='mx-auto'>
         <article className="container">
-          <div className="p-4 mb-4 text-sm text-yellow-800 bg-yellow-100 rounded-lg dark:bg-yellow-200 dark:text-yellow-800 text-center" role="alert">
+          <div className="hidden p-4 mb-4 text-sm text-yellow-800 bg-yellow-100 rounded-lg dark:bg-yellow-200 dark:text-yellow-800 text-center" role="alert">
             {`${t("call_actions.cta_yellow")} `}
             <Link href={`${props.locale}/contact`} ><span className="font-medium">{t("action-btn-contact")}</span></Link>
           </div>
-          <Col className="flex flex-col items-start justify-center w-full max-w-2xl mx-auto mb-[50px] md:mt-[70px]">
+          <Col className="flex flex-col items-start justify-center w-full max-w-4xl mx-auto mb-[50px] md:mt-[70px]">
             <h1 className="mb-4 text-3xl font-bold tracking-tight text-black md:text-5xl dark:text-white">
               {shot.metadata.title}
             </h1>
-            <div className="flex flex-col items-start justify-between w-full mt-2 pb-3 md:flex-row md:items-center  border-b-2">
+            <div className="flex flex-col items-start justify-between w-full mt-2 pb-3 md:flex-row md:items-center  border-b-2 border-dotted">
               <div className="flex items-center">
                 <h2 className="mb-2 text-gray-900 md:text-6xl dark:text-gray-100">
                   {shot.metadata.icon}
@@ -49,7 +49,7 @@ const ArticlePage = (props: any) => {
               </p>
             </div>
             <Suspense fallback={false}>
-              <div className="w-full mt-4 prose dark:prose-dark text-lg">
+              <div className="w-full mt-4 prose dark:prose-dark text-2xl mx-auto">
                 <div dangerouslySetInnerHTML={{ __html: marked(shot.markdown) }} />
               </div>
               <Newsletter />
